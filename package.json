@@ -4,7 +4,7 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "start": "nodemon ./data-structures/singly-linked-list/index.js"
+    "start": "nodemon ./data-structures/singly-linked-list.js"
   },
   "keywords": [],
   "author": "",
