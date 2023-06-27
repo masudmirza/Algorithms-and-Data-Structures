@@ -196,3 +196,9 @@ list.push("You");
 console.log(list.print());
 console.log(list.reverse());
 console.log(list.print());
+
+
+// Insertion - O(1)
+// Removal - O(1) or O(n)
+// Searching - O(N)
+// Access - O(N)
