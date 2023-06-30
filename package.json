@@ -4,7 +4,7 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "start": "nodemon ./data-structures/queue.js"
+    "start": "nodemon ./data-structures/binary-search-tree.js"
   },
   "keywords": [],
   "author": "",
