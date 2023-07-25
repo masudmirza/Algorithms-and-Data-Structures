@@ -36,8 +36,8 @@ class Graph {
       visited[vertex] = true;
       result.push(vertex);
 
-      adjacencyList[vertex].forEach(neighbour => {
-        if (!visited[neighbour]) dfs(neighbour);
+      adjacencyList[vertex].forEach(neighbor => {
+        if (!visited[neighbor]) dfs(neighbor);
       });
     })(start);
 
@@ -55,10 +55,10 @@ class Graph {
       currentVertex = stack.pop();
       result.push(currentVertex);
 
-      this.adjacencyList[currentVertex].forEach(neighbour => {
-        if (!visited[neighbour]) {
-          visited[neighbour] = true;
-          stack.push(neighbour);
+      this.adjacencyList[currentVertex].forEach(neighbor => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          stack.push(neighbor);
         }
       });
     }
@@ -77,16 +77,16 @@ class Graph {
       currentVertex = queue.shift();
       result.push(currentVertex);
 
-      this.adjacencyList[currentVertex].forEach(neighbour => {
-        if (!visited[neighbour]) {
-          visited[neighbour] = true;
-          queue.push(neighbour);
+      this.adjacencyList[currentVertex].forEach(neighbor => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          queue.push(neighbor);
         }
       });
-      // this.adjacencyList[currentVertex].slice().reverse().forEach(neighbour => {
-      //   if (!visited[neighbour]) {
-      //     visited[neighbour] = true;
-      //     queue.push(neighbour);
+      // this.adjacencyList[currentVertex].slice().reverse().forEach(neighbor => {
+      //   if (!visited[neighbor]) {
+      //     visited[neighbor] = true;
+      //     queue.push(neighbor);
       //   }
       // });
     }
