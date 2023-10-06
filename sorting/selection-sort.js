@@ -15,6 +15,7 @@ function sort (arr) {
     }
     return arr;
 }
+console.log('test');
 
 function sort2 (arr) {
     const swap = (arr,idx1,idx2) => {
